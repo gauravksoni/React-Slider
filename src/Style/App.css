@@ -1,0 +1,110 @@
+.slider{
+  width: 40em;
+  height: 23em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 4em;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.slider-bottom{
+  width: 100%;
+  height: 5.6em;
+  background-color: darkseagreen;
+  position: relative;
+  top: 2.3em;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.Button{
+  width: 40em;
+  display: inline-block;
+  position: relative;
+  top: -2em;
+}
+.Button-next{
+  display: inline-block;
+	position: relative;
+  float: right;
+  top: -39px;
+  left: -18px;
+}
+.Button-next::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid green;
+}
+/*.Button-next:hover{
+  height: 133px;
+	width: 400px;
+	margin-left: -50px;
+}*/
+.component{
+  width: 40em;
+  display: flex;
+  justify-content: center;
+  height: 14em;
+  top: 6em;
+  flex-direction: column;
+}
+.component-name{
+  line-height: 2em;
+  position: relative;
+  top: -4.7rem;
+  text-align: center;
+  background-color: darkseagreen;
+  color: aliceblue;
+}
+.component-image{
+  width: 15em;
+  position: absolute;
+  top: 6em;
+  align-self: center;
+  height: 10em;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+
+}
+.process-image{
+  width: 16em;
+  position: absolute;
+  left: 12em;
+  height: 5rem;
+  top: 6px;
+}
+.slideRight{
+	-webkit-animation-name: slideRight;
+
+	-webkit-animation-duration: 1s;
+
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
